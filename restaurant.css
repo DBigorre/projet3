@@ -9,18 +9,36 @@ h1, h3, p {
 	text-decoration: none;
 }
 
+.header-section{
+	width: 100%;
+	padding: 30px 0 15px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 7fr 2fr;
+	justify-content: center;
+	display: flex;
+}
+
 .restaurant__photo__entete{
-    width: 100%;
+  width: 100%;
 }
 .restaurant__photo__entete__image{
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 
 .restaurant__section{
-    width: 100%;
-    background-color: whitesmoke;
-    border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.restaurant__container{
+  margin-top: -85px;
+  position: absolute;
+  background-color: whitesmoke;
+  display: flex;
+  width: 100%;
+  border-radius: 20px 20px 0 0 ;
+  padding-bottom: 4%;
 }
 
 header{
@@ -28,7 +46,7 @@ header{
 }
 
 .menu__entree__card{
-    width: 90%;
+  width: 90%;
 	background-color: white;
 	margin: auto;
 	border-radius: 20px;
