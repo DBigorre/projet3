@@ -20,35 +20,182 @@ h1, h3, p {
 
 .restaurant__photo__entete{
   width: 100%;
+  max-height: 30%;
 }
 .restaurant__photo__entete__image{
   width: 100%;
   object-fit: cover;
   position: relative;
+  max-height: 450px;
 }
 
 .restaurant__section{
   background-color: whitesmoke;
+  width: 100%;
 }
 
 .restaurant__container{
-  margin-top: -85px;
+  margin-top: -75px;
   position: absolute;
   background-color: whitesmoke;
   display: flex;
   width: 100%;
   border-radius: 20px 20px 0 0 ;
-  padding-bottom: 4%;
+}
+
+.restaurant__titre{
+  font-family: "shrikhand"
+}
+
+.restaurant__titre__heart{
+  margin-right: 14px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 header{
     background-color: red;
 }
 
+.menu__entree{
+  
+}
+
 .menu__entree__card{
   width: 90%;
 	background-color: white;
 	margin: auto;
-	border-radius: 20px;
 	margin-bottom: 5%;
+  height: 65px;
+  border: none;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__entree__card__titre{
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.menu__entree__card__prix{
+  font-weight: 700;
+  margin-right: 2%;
+}
+
+.menu__entree__card__soustitre{
+  margin-top: 2px;
+}
+
+.menu__plat__card__titre{
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.menu__plat__card__soustitre{
+  margin-top: 2px;
+}
+
+.menu__dessert__card__titre{
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.menu__dessert__card__soustitre{
+  margin-top: 2px;
+}
+
+.menu__plat__card{
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5%;
+  height: 65px;
+  border: none;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__plat__card__titre{
+  width: 100%;
+  font-weight: 700;
+}
+
+.menu__plat__card__prix{
+  font-weight: 700;
+  margin-right: 2%;
+}
+
+.menu__dessert__card{
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5%;
+  height: 65px;
+  border: none;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__dessert__card__titre{
+  width: 100%;
+  font-weight: 700;
+}
+
+.restaurant__card__text{
+  margin-left: 2%
+}
+
+.menu__dessert__card__prix{
+  font-weight: 700;
+  margin-right: 2%;
+}
+
+.menu__btn{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.btn{
+	background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px 30px 30px 30px;
+	border: none;
+  margin: auto;
+}
+
+.footer{
+	color: white;
+  background-color: rgb(70, 70, 70);
+  padding: 20px 15px 30px 25px;
+}
+
+.footer__logo{
+	color: white;
+  font-family: "Shrikhand";
+  font-size: larger;
+}
+
+footer h4{
+  margin-top: 0;
+  padding-bottom: 15px;
+}
+
+footer ul{
+  margin-bottom: 0;
 }
