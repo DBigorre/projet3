@@ -267,10 +267,14 @@ footer h4{
   margin-top: 0;
   font-weight: normal;
   padding-bottom: 15px;
+  margin-left: 2%;
 }
+
+
 
 footer ul{
   margin-bottom: 0;
+  list-style-type: none;
 }
 
 .fa-heart {

@@ -199,8 +199,14 @@ i{
 footer h4{
   margin-top: 0;
   padding-bottom: 15px;
+  font-weight: normal;
 }
 
 footer ul{
   margin-bottom: 0;
+  list-style-type: none;
+}
+
+footer i{
+  margin: 0%
 }
