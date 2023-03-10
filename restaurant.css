@@ -85,6 +85,12 @@ h1, h3, p {
   padding-left: 6%;
 }
 
+@media screen and (min-width: 1280px){
+  .restaurant__titre{
+    padding-left: 2%;
+  }
+}
+
 .restaurant__titre__heart{
   margin-right: 14px;
   margin-left: auto;
@@ -268,7 +274,6 @@ footer ul{
 }
 
 .fa-heart {
-  color:black;
   font-size: x-large;
 }
 .fa-heart:active{
@@ -296,62 +301,61 @@ footer ul{
 }
 
 .menu__entree__card:hover .menu__entree__card__prix{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__plat__card:hover .menu__plat__card__prix{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__dessert__card:hover .menu__dessert__card__prix{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__entree__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__plat__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__dessert__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 1s;
+  animation: slide 2s;
 }
 
 .menu__entree__card:hover .fa-check-circle{
-  animation: rotation 1s;
+  animation: rotation 2s;
   font-size: x-large;
   color: white;
   font-weight: 900;
 }
 
 .menu__plat__card:hover .fa-check-circle{
-  animation: rotation 1s;
+  animation: rotation 2s;
   font-size: x-large;
   color: white;
   font-weight: 900;
 }
 
 .menu__dessert__card:hover .fa-check-circle{
-  animation: rotation 1s;
+  animation: rotation 2s;
   font-size: x-large;
   color: white;
   font-weight: 900;
 }
+
 .fa-check-circle{
   opacity: 0;
-  width: 0;
 }
 
 
-
+/* animations */
 @keyframes slide {
   0% {
   }
 
   100% {
-
       opacity: 1;
       width: 4rem;
   }
