@@ -22,6 +22,7 @@ h1, h3, p {
 	text-decoration: none;
 }
 
+/* header */
 .header__container{
   display: flex;
   justify-content: center;
@@ -44,6 +45,17 @@ h1, h3, p {
 	display: flex;
 }
 
+img.header-logo{
+  height: 70%;
+}
+
+@media screen and (min-width: 1280px) {
+  img.header-logo {
+      height: 100%;
+  }
+}
+
+/* photo restaurant */
 .restaurant__photo__entete{
   width: 100%;
   max-height: 30%;
@@ -62,8 +74,8 @@ h1, h3, p {
 
 @media screen and (min-width: 1280px) {
   .restaurant__menu {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr)
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
   }
   .menu__btn{
     justify-content: center;
@@ -71,6 +83,7 @@ h1, h3, p {
   }
 }
 
+/* nom du restaurant et coeur */
 .restaurant__container{
   margin-top: -75px;
   position: absolute;
@@ -91,11 +104,37 @@ h1, h3, p {
   }
 }
 
+.restaurant__titre__heart button{
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1280px){
+  .restaurant__titre__heart button:focus > .fa-heart{
+  font-weight: 900;
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+}
+
 .restaurant__titre__heart{
   margin-right: 14px;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.fa-heart {
+  font-size: x-large;
+}
+.fa-heart:hover{
+  font-weight: 900;
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .border{
@@ -107,33 +146,38 @@ h1, h3, p {
   margin-left: 6%;
 }
 
-.menu__entree__titre{
+/* titres des plats */
+.menu__titre{
   padding-left: 6%;
   font-size: 16px;
   font-weight: normal;
 }
 
-.menu__plat__titre{
-  padding-left: 6%;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.menu__dessert__titre{
-  padding-left: 6%;
-  font-size: 16px;
-  font-weight: normal;
-}
-
+/* cards */
 .menu__entree{
   padding-top: 5px;
 }
 
-.menu__entree__card{
+
+.menu__card__titre{
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.menu__card__prix{
+  font-weight: 700;
+}
+
+.menu__card__soustitre{
+  margin-top: 2px;
+}
+
+.menu__card{
   width: 90%;
-	background-color: white;
-	margin: auto;
-	margin-bottom: 5%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5%;
   height: 65px;
   border: none;
   text-align: left;
@@ -141,100 +185,48 @@ h1, h3, p {
   box-shadow: 2px 3px 5px #e6e6e6;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
-  animation: appearance 1.5s;
+  animation: apparition 1.5s;
   animation-delay: 0s;
   animation-fill-mode: both;
-}
-
-.menu__entree__card__titre{
-  width: 100%;
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 16px;
-}
-
-.menu__entree__card__prix{
-  font-weight: 700;
-  margin-right: 2%;
-}
-
-.menu__entree__card__soustitre{
-  margin-top: 2px;
-}
-
-.menu__plat__card__titre{
-  width: 100%;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.menu__plat__card__soustitre{
-  margin-top: 2px;
-}
-
-.menu__dessert__card__titre{
-  width: 100%;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.menu__dessert__card__soustitre{
-  margin-top: 2px;
-}
-
-.menu__plat__card{
-  width: 90%;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 5%;
-  height: 65px;
-  border: none;
-  text-align: left;
-  border-radius: 20px;
-  box-shadow: 2px 3px 5px #e6e6e6;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__plat__card__titre{
-  width: 100%;
-  font-weight: 700;
-}
-
-.menu__plat__card__prix{
-  font-weight: 700;
-  margin-right: 2%;
-}
-
-.menu__dessert__card{
-  width: 90%;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 5%;
-  height: 65px;
-  border: none;
-  text-align: left;
-  border-radius: 20px;
-  box-shadow: 2px 3px 5px #e6e6e6;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__dessert__card__titre{
-  width: 100%;
-  font-weight: 700;
 }
 
 .restaurant__card__text{
   margin-left: 2%
 }
 
-.menu__dessert__card__prix{
-  font-weight: 700;
-  margin-right: 2%;
+/* animation cards */
+.animation{
+  display: flex;
 }
 
+.menu__entries__card__wrapper-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  height: 100%;
+  background-color: #99E2D0;
+  opacity: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.menu__card:hover .menu__entries__card__wrapper-icon{
+  animation: slide 2s;
+}
+
+.menu__card:hover .fa-check-circle{
+  animation: rotation 2s;
+  font-size: x-large;
+  color: white;
+  font-weight: 900;
+}
+
+.fa-check-circle{
+  opacity: 0;
+}
+
+
+/* boutton commander */
 .menu__btn{
   width: 100%;
   justify-content: center;
@@ -251,6 +243,7 @@ h1, h3, p {
   margin: auto;
 }
 
+/* footer */
 .footer{
 	color: white;
   background-color: rgb(70, 70, 70);
@@ -270,89 +263,10 @@ footer h4{
   margin-left: 2%;
 }
 
-
-
 footer ul{
   margin-bottom: 0;
   list-style-type: none;
 }
-
-.fa-heart {
-  font-size: x-large;
-}
-.fa-heart:active{
-  font-weight: 900;
-  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.animation{
-  display: flex;
-}
-
-.menu__entries__card__wrapper-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0px;
-  height: 100%;
-  background-color: #99E2D0;
-  opacity: 0;
-  border-radius: 0 20px 20px 0;
-  margin-left: 2%;
-}
-
-.menu__entree__card:hover .menu__entree__card__prix{
-  animation: slide 2s;
-}
-
-.menu__plat__card:hover .menu__plat__card__prix{
-  animation: slide 2s;
-}
-
-.menu__dessert__card:hover .menu__dessert__card__prix{
-  animation: slide 2s;
-}
-
-.menu__entree__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 2s;
-}
-
-.menu__plat__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 2s;
-}
-
-.menu__dessert__card:hover .menu__entries__card__wrapper-icon{
-  animation: slide 2s;
-}
-
-.menu__entree__card:hover .fa-check-circle{
-  animation: rotation 2s;
-  font-size: x-large;
-  color: white;
-  font-weight: 900;
-}
-
-.menu__plat__card:hover .fa-check-circle{
-  animation: rotation 2s;
-  font-size: x-large;
-  color: white;
-  font-weight: 900;
-}
-
-.menu__dessert__card:hover .fa-check-circle{
-  animation: rotation 2s;
-  font-size: x-large;
-  color: white;
-  font-weight: 900;
-}
-
-.fa-check-circle{
-  opacity: 0;
-}
-
 
 /* animations */
 @keyframes slide {
@@ -367,12 +281,23 @@ footer ul{
 
 @keyframes rotation {
   0% {
-      transform: rotate(360deg);
-      opacity: 1;
+    transform: rotate(360deg);
+    opacity: 1;
   }
 
   100% {
-      transform: rotate(0deg);
-      opacity: 1;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
