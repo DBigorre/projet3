@@ -1,6 +1,7 @@
 body{
   max-width: 768px;
   margin: 0 auto;
+  font-family: 'Roboto';
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px){
@@ -95,6 +96,10 @@ i{
   }
 }
 
+.fonctionnement-title{
+  padding-top: 2%;
+}
+
 .fonctionnement-card{
 	border-radius: 20px;
 	display: flex;
@@ -102,6 +107,7 @@ i{
 	width: 90%;
 	align-items: center;
 	margin: 2%;
+  height: 90px;
 }
 
 .fonctionnement-card-number{
@@ -166,6 +172,13 @@ i{
   border-radius: 20px 20px 0 0;
 }
 
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 5px;
+  position: absolute;
+}
+
 .restaurant__card__title{
 	margin: unset;
 }
@@ -182,6 +195,19 @@ i{
 
 .restaurant__card__main__texts{
 	flex-direction: column;
+}
+
+.fa-heart:hover{
+  font-weight: 900;
+  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant__card__heart button{
+  border: none;
+  background-color: transparent;
 }
 
 .footer{
