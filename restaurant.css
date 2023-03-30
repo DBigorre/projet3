@@ -158,11 +158,17 @@ img.header-logo{
   padding-top: 5px;
 }
 
+.restaurant__card__text{
+  width: 80%;
+}
 
 .menu__card__titre{
   width: 100%;
   font-weight: 700;
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__card__prix{
@@ -171,6 +177,9 @@ img.header-logo{
 
 .menu__card__soustitre{
   margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__card{

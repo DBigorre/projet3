@@ -176,7 +176,44 @@ i{
   background-color: #99E2D0;
   color: #008766;
   padding: 5px;
-  position: absolute;
+  width: 90px;
+  border-radius: 2px;
+  position: relative;
+  left: 70%;
+  margin-bottom: -28px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  .new {
+    left: 60%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .new {
+    left: 75%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .new {
+    left: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .new {
+    left: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .new {
+    left: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .new {
+    left: 70%;
+  }
 }
 
 .restaurant__card__title{
@@ -235,4 +272,8 @@ footer ul{
 
 footer i{
   margin: 0%
+}
+
+.footer__liste__item a{
+  color: white;
 }
